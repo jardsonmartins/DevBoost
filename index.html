@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="img/favicon.svg">
+
+    <!-- Primary Meta Tags -->
+    <title>DevBoost | Aprenda Front-end do Zero</title>
+    <meta name="title" content="DevBoost | Aprenda Front-end do Zero">
+    <meta name="description" content="Aprenda Front-end de forma prática e conquiste as melhores vagas do mercado.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://devboost.com.br/">
+    <meta property="og:title" content="DevBoost | Front-end do Zero">
+    <meta property="og:description" content="Aprenda Front-end de forma prática e conquiste as melhores vagas do mercado.">
+    <meta property="og:image" content="https://devboost.com.br/img/content_social.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://devboost.com.br/">
+    <meta property="twitter:title" content="DevBoost | Front-end do Zero">
+    <meta property="twitter:description" content="Aprenda Front-end de forma prática e conquiste as melhores vagas do mercado.">
+    <meta property="twitter:image" content="https://devboost.com.br/img/content_social.jpg">
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1694146880931516');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1694146880931516&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VNM6MWNL2F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-VNM6MWNL2F');
+    </script>
+
+    <!-- Hotjar Tracking Code for https://devboost.com.br/ -->
+    <script>
+      (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:3195214,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+</head>
+<body>
+    <div class="page">
+        <a href="https://api.whatsapp.com/send?phone=5585992364455&text=Ol%C3%A1%2C%20tenho%20d%C3%BAvida%20sobre" target="_blank"><img src="img/Whatsapp.webp" alt="" class="whatsapp"></a>
+        <div class="topo" id="topo">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="https://devboost.com.br/">
+                        <img src="img/Logo.svg" alt="Logo da DevBoost">
+                      </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mt-2">
+                          <li class="nav-item me-4">
+                            <a class="nav-link" aria-current="page" href="https://devboost.com.br/">Home</a>
+                          </li>
+                          <li class="nav-item me-3">
+                            <a class="nav-link" aria-current="page" href="#plano">Plano</a>
+                          </li>
+                          <li class="nav-item me-3">
+                            <a class="nav-link" aria-current="page" href="#duvidas">Dúvidas</a>
+                          </li>
+                          <li class="nav-item me-3">
+                            <a class="nav-link" aria-current="page" href="#rodape">Fale Conosco</a>
+                          </li>
+                          <a href="https://pay.kiwify.com.br/VcyQZh9">
+                            <button type="button" class="btn btnOne">Fazer matrícula</button>
+                          </a>
+                          <a href="https://dashboard.kiwify.com.br/course/premium/ebfa8b14-edd3-46f6-869b-fcebc9ae9340">
+                            <button type="button" class="btn btnLogin">Login</button>
+                          </a>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                  <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12" data-aos="fade-left" data-aos-duration="1000">
+                      <div class="text">
+                        <div class="titulo">
+                          <img src="img/Icons/seta.svg" alt="seta para cima" class="icon">
+                          <div class="ms-2 title">Dê um boost na sua carreira</div>
+                        </div>
+                        <h1 class="mt-2">Aprenda Front-end de forma prática e conquiste as melhores vagas</h1>
+                        <p>Saia do amadorismo e torne-se um desenvolvedor front-end profissional.</p>
+                        <a href="https://pay.kiwify.com.br/VcyQZh9"><button type="button" class="btn btn-primary">Fazer minha matrícula</button></a>
+                        <h6 class="mt-4"><span>🚀 Matricule-se por apenas R$49,90 mês</span> </h6>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12" data-aos="fade-right" data-aos-duration="1000">
+                      <div class="homemComputador">
+                        <img src="img/Homem-com-computador.webp" alt="Homem segurando computador" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <div class="nossaPlataforma">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 text-center" data-aos="fade-in" data-aos-duration="1000">
+                <div class="title">Nossa plataforma</div>
+                <h2 class="mt-2">O que você vai encontrar aqui</h2>
+              </div>
+            </div>
+            <div class="row icons">
+              <div class="col-lg-3 col-md-3 col-sm-12 text-center icon" data-aos="fade-left" data-aos-duration="1000">
+                  <img src="img/Icons/estrela.svg" alt="Mais de 100 aulas">
+                  <p class="mt-2">Mais de 100 aulas sobre<br>Front-end</p>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12 text-center icon" data-aos="fade-in" data-aos-duration="1000">
+                  <img src="img/Icons/laptop.svg" alt="Projetos reais">
+                  <p class="mt-2">Criação de projetos reais<br>do zero</p>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12 text-center icon" data-aos="fade-in" data-aos-duration="1000">
+                  <img src="img/Icons/arquivo.svg" alt="Materiais">
+                  <p class="mt-2">Materiais<br>complementares</p>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12 text-center icon" data-aos="fade-right" data-aos-duration="1000">
+                  <img src="img/Icons/responsive.svg" alt="Aulas 100% online">
+                  <p class="mt-2">Uma experiência 100%<br>online</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="backgroundCertificado" id="projetos">
+          <div class="aprendaDoZero d-flex align-items-center">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-left" data-aos-duration="1000">
+                  <div class="title">Aprenda do zero</div>
+                  <h2 class="mt-2">Comece do zero até a<br>
+                    criação de projetos<br>
+                    incríveis</h2>
+                    <p>Criamos com você sites reais que<br>
+                      podem ser usados para construir o<br>
+                      seu portfólio.</p>
+                    <a href="projetos/LP-Nubank/index.html" target="_blank"><button type="button" class="btn btn-primary">Ver projeto completo</button></a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-right" data-aos-duration="1000">
+                  <img src="img/Projetos.webp" alt="" class="img-fluid projetos">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="linha">
+            <div class="container">
+              <div class="row">
+                <hr>
+              </div>
+            </div>
+          </div>
+          <div class="certificado d-flex align-items-center">
+            <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-lg-6 col-md-6 col-sm-12" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="img/Certificado.webp" alt="Certificado de conclusão do curso" class="img-certificado img-fluid">
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="title">certificado</div>
+                    <h2>Conquiste seu certificado</h2>
+                    <p>Ao completar todo o treinameto receba<br>
+                      seu certificado com validade de horas<br>
+                      complementares.</p>
+                      <a href="https://pay.kiwify.com.br/VcyQZh9"><button type="button" class="btn btn-primary">Quero meu certificado</button></a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="linguagens" data-aos="fade-right" data-aos-duration="1000">
+          <div class="container">
+            <div class="col-12">
+              <h5 class="item">Html</h5>
+              <div class="circle item"></div>
+              <h5 class="item">Css</h5>
+              <div class="circle item"></div>
+              <h5 class="item">JavaScript</h5>
+              <div class="circle item"></div>
+              <h5 class="item">Sass</h5>
+              <div class="circle item"></div>
+              <h5 class="item">performance</h5>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="linha">
+          <div class="container">
+            <div class="row">
+              <hr>
+            </div>
+          </div>
+        </div>
+
+        <div class="salarios text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="title" data-aos="fade-in" data-aos-duration="1000">Salários</div>
+                <h2 class="mb-5" data-aos="fade-in" data-aos-duration="1000">Faça parte dos profissionais mais procurados do mercado</h2>
+                <img src="img/Gráfico.webp" class="img-fluid" alt="Gráfico com a média de salários de desenvolvedores">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="grade d-flex align-items-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 text-center">
+                <div class="title">Grade</div>
+                <h2>O que você vai aprender</h2>
+              </div>
+            </div>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper mt-5">
+                <div class="swiper-slide">
+                  <div class="titulo d-flex flex-direction-row">
+                    <img src="img/Icons/icon-html.svg" alt="">
+                    <h5>Html</h5>
+                  </div>
+                  <ul>
+                    <li>O que é HTML?</li>
+                    <li>Anatomia das Tags</li>
+                    <li>Estrutura Básica do HTML e Primeiro Arquivo</li>
+                    <li>VScode</li>
+                    <li>Aninhamento de Tags</li>
+                    <li>Comentários HTML</li>
+                    <li>Hierarquia de Títulos</li>
+                    <li>Outras tags de texto</li>
+                    <li>Imagens</li>
+                    <li>Listas</li>
+                    <li>Links</li>
+                    <li>Tabelas</li>
+                    <li>Tabelas pt.2</li>
+                    <li>Div</li>
+                    <li>Formulários</li>
+                    <li>Formulários pt.2</li>
+                    <li>Semântica do HTML</li>
+                  </ul>
+                </div>
+                <div class="swiper-slide">
+                  <div class="titulo d-flex flex-direction-row">
+                    <img src="img/Icons/icon-css.svg" alt="">
+                    <h5>Css</h5>
+                  </div>
+                  <ul>
+                    <li>Introdução ao CSS</li>
+                    <li>Estilizando seus arquivos HTML</li>
+                    <li>Seletores Pt.1</li>
+                    <li>Seletores Pt.2</li>
+                    <li>Cores</li>
+                    <li>Background</li>
+                    <li>Margin e Padding</li>
+                    <li>Personalização de Fonts</li>
+                    <li>Bordas</li>
+                    <li>Sombras</li>
+                    <li>Position</li>
+                    <li>Display Inline e Block</li>
+                    <li>Display Flex</li>
+                    <li>Pseudo-elementos e Pseudo-classes</li>
+                    <li>Transitions</li>
+                    <li>Animações</li>
+                  </ul>
+                </div>
+                <div class="swiper-slide">
+                  <div class="titulo d-flex flex-direction-row">
+                    <img src="img/Icons/icon-js.svg" alt="">
+                    <h5>Java Script</h5>
+                  </div>
+                  <ul>
+                    <li>O que é o JavaScript?</li>
+                    <li>JS Arquivos Internos e Externos</li>
+                    <li>Saídas JS</li>
+                    <li>Criando Declarações</li>
+                    <li>Estudando a sintaxe JS</li>
+                    <li>Declarando var, const e let</li>
+                    <li>Comentários</li>
+                    <li>JS Operadores</li>
+                    <li>Funções</li>
+                    <li>Criando Objetos no JavaScript</li>
+                    <li>Eventos</li>
+                    <li>Condicionais if e else</li>
+                    <li>Switch</li>
+                    <li>Arrays</li>
+                    <li>Funções array</li>
+                    <li>Classes</li>
+                    <li>JSON</li>
+                  </ul>
+                </div>
+                <div class="swiper-slide">
+                  <div class="titulo d-flex flex-direction-row">
+                    <img src="img/Icons/icon-sass.svg" alt="">
+                    <h5>Sass</h5>
+                  </div>
+                  <ul>
+                    <li>Introdução</li>
+                    <li>Instalando o Sass</li>
+                    <li>Import</li>
+                    <li>Variáveis</li>
+                    <li>Encadeamentos</li>
+                    <li>Mixins</li>
+                    <li>Responsivo - Media Queries</li>
+                  </ul>
+                </div>
+                <div class="swiper-slide">
+                  <div class="titulo d-flex flex-direction-row">
+                    <img src="img/Icons/nubank-icon.svg" alt="">
+                    <h5>Projeto Nubank</h5>
+                  </div>
+                  <ul>
+                    <li>Apresentação do Projeto</li>
+                    <li>Preparando o ambiente</li>
+                    <li>Resets, Variables, Grid e Fonts</li>
+                    <li>Exportando os assets</li>
+                    <li>Buttons</li>
+                    <li>Criando os componentes</li>
+                    <li>Favicon</li>
+                    <li>Header (Desktop e Mobile)</li>
+                    <li>Hero (Desktop e Mobile)</li>
+                    <li>Beneficios (Desktop e Mobile)</li>
+                    <li>Ultravioleta (Desktop e Mobile)</li>
+                    <li>Pix (Desktop e Mobile)</li>
+                    <li>Depoimentos (Desktop e Mobile)</li>
+                    <li>App (Desktop e Mobile)</li>
+                    <li>Footer (Desktop e Mobile)</li>
+                    <li>Animações com keyframes</li>
+                    <li>AOS Animate</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+
+            </div>
+          </div>
+        </div>
+        <!-- Depoimentos
+        <div class="depoimentos" id="depoimentos">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-12" data-aos="fade-in" data-aos-duration="1000">
+                <div class="title">Depoimentos</div>
+                <h2>O que estão dizendo sobre a DevBoost</h2>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper mt-5">
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <img src="img/Icons/citacao.svg" alt="Aspas" class="icon">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae, ullamcorper vitae fringilla pellentesque et non.</p>
+                      <div class="nome">Fernando pereira</div>
+                      <p>Desenvolverdor Front-end</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <img src="img/Icons/citacao.svg" alt="Aspas" class="icon">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae, ullamcorper vitae fringilla pellentesque et non.</p>
+                      <div class="nome">Fernando pereira</div>
+                      <p>Desenvolverdor Front-end</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <img src="img/Icons/citacao.svg" alt="Aspas" class="icon">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae, ullamcorper vitae fringilla pellentesque et non.</p>
+                      <div class="nome">Fernando pereira</div>
+                      <p>Desenvolverdor Front-end</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <img src="img/Icons/citacao.svg" alt="Aspas" class="icon">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae, ullamcorper vitae fringilla pellentesque et non.</p>
+                      <div class="nome">Fernando pereira</div>
+                      <p>Desenvolverdor Front-end</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        -->
+        <div class="backgroundFinal">
+          <div class="faq" id="duvidas">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                  <div class="col-left">
+                    <div class="title">Faq</div>
+                    <h2>Perguntas Frequentes</h2>
+                    <div class="discord mt-4">
+                      <img src="img/Icons/Icon-discord.svg" alt="">
+                      <h6 class="mt-3">Comunidade no discord</h6>
+                      <p>Tire suas dúvidas com os professores e também com outros alunos.</p>
+                    </div>
+                    <div class="acesso">
+                      <img src="img/Icons/icon-medalha.svg" alt="">
+                      <h6 class="mt-3">Recaba todas as atualizações</h6>
+                      <p>Tenha acesso a todas as atualizações e não pague nada a mais por isso.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12 d-flex justify-content-center">
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Qual o prazo de garantia?
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Temos o compromisso com nossos alunos e oferecemos <strong>7 dias corridos de garantia,</strong> a partir da data e pagamento da assinatura, para a desistência e devolução integral do valor pago pelo aluno.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Como funciona a renovação da assinatura?
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          A renovação é automática, e ocorre a cada 30 dias.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Como cancelar minha assinatura?
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Você pode mandar um email para <strong>contato@devboost.com.br</strong> e solicita o cancelamento da sua assinatura.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          Quais as formas de pagamento?
+                        </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Você pode comprar usando o cartão de crédito, pix ou boleto.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="plano d-flex align-items-center" id="plano">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <img src="img/Icons/html.svg" alt="logo html" class="html" data-aos="zoom-in" data-aos-duration="1000">
+                  <img src="img/Img-plano.webp" alt="" class="img-fluid img-plano" data-aos="fade-left" data-aos-duration="1000">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="title">Seja aluno</div>
+                    <h2>Dê um boost na<br>sua carreira</h2>
+                    <p class="descricao">Aprenda Front-end de uma vez por todas de<br>
+                      forma prática, com um passo a passo criado <br>
+                      para te guiar do zero até sua vaga de dev.</p>
+                    <p class="preco"><s>De R$ 79,90 por:</s></p>
+                    <h4 class="mb-3">R$ 49,90<span> /mês</span></h4>
+                    <a href="https://pay.kiwify.com.br/VcyQZh9"><button type="button" class="btn btn-primary">Fazer minha matrícula</button></a>
+                    <img src="img/Icons/css.svg" alt="logo css" class="css" data-aos="fade-in" data-aos-duration="1000">
+                    <img src="img/Icons/js.svg" alt="logo js" class="js" data-aos="fade-in" data-aos-duration="1000">
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer" id="rodape">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <a href=""><img src="img/Logo.svg" alt="Logo da DevBoost" class="logo"></a>
+                  <div class="lineOne">
+                    <div class="line mt-4 mb-4"></div>
+                  </div>
+                  <p>Aqui você dá um boost<br>na sua carreira.</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <h6>Transparência</h6>
+                  <ul>
+                    <li class="mt-3"><a href="TermosDeUso.html" target="_blank">Termos de uso</a></li>
+                    <li class="mt-3"><a href="PoliticaDePrivacidade.html" target="_blank">Política de privacidade</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <h6>Fale conosco</h6>
+                  <ul>
+                    <li class="mt-3"><a href="https://api.whatsapp.com/send?phone=5585992364455&text=Ol%C3%A1%2C%20tenho%20d%C3%BAvida%20sobre" target="_blank"><img src="img/Icons/whatsapp.svg" alt="Whatsapp" class="me-2">Whatsapp</a></li>
+                    <li class="mt-3"><a href="mailto:contato@devboost.com.br"><img src="img/Icons/email.svg" alt="email" class="me-2" target="_blank">Contato@devboost.com.br</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <h6>Redes sociais</h6>
+                  <ul>
+                    <li class="mt-3"><a href="https://www.instagram.com/dev_boost/" target="_blank"><img src="img/Icons/instagram.svg" alt="Instagram" class="me-2">Instagram</a></li>
+                    <li class="mt-3"><a href="https://www.youtube.com/channel/UCSNX_8FZKX8IfgCuyaplEgQ" target="_blank"><img src="img/Icons/youtube.svg" alt="Youtube" class="me-2">Youtube</a></li>
+                    <li class="mt-3"><a href="https://t.me/devboost" target="_blank"><img src="img/Icons/telegram.svg" alt="Telegram" class="me-2">Telegram</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="linha">
+                <hr>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <p class="mt-4 opacity-50 direitos">2022 © DevBoost - Todos os direitos reservados.</p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <a href="#topo">
+                    <div class="setaTopo mt-4">
+                      <p class="me-2 opacity-50">Volta para o topo</p>
+                      <img src="img/Icons/seta-topo.svg" alt="Seta para cima">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 30
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 40
+        }
+      }
+      });
+
+      AOS.init({
+        once: true
+      });
+    </script>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.promocao{
+    height: 38px;
+    width: 100%;
+    background: linear-gradient(95.54deg, #F3451C -6.71%, #FF933A 142.56%);
+
+    p{
+        color: #101116;
+        padding: 0;
+        margin: 0;
+    }
+    span{
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .promocao{
+        display: none !important;
+    }
+}

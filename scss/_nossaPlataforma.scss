@@ -1,0 +1,32 @@
+.nossaPlataforma{
+    height: 460px;
+
+    .title{
+        margin-top: 105px;
+    }
+    .icons{
+        margin-top: 70px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .nossaPlataforma{
+        height: auto;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .nossaPlataforma{
+        height: auto;
+        padding-bottom: 100px;
+
+        .title{
+            margin-top: 50px;
+        }
+        .icons{
+            margin-top: 20px;
+        }
+        .icon{
+            margin-top: 10px;
+        }
+    }
+}

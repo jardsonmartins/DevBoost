@@ -1,0 +1,23 @@
+.salarios{
+    background-image: url('../img/Background-salarios.jpg');
+    height: 740px;
+
+    .title{
+        margin-top: 90px;
+    }
+    h2{
+        max-width: 536px;
+    }
+    .col-12{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .salarios{
+        height: auto;
+        padding-bottom: 50px;
+    }
+}

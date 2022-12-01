@@ -1,0 +1,29 @@
+{
+  "name": "devboost",
+  "version": "1.0.0",
+  "description": "Site criado para a escola de programação DevBoost",
+  "main": "index.js",
+  "dependencies": {
+    "popper.js": "^1.16.1",
+    "bootstrap": "^5.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss/global.scss:css/main.css",
+    "sass-min": "sass --watch scss/global.scss:css/main.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jardsonmartins/DevBoost.git"
+  },
+  "keywords": [
+    "DevBoost"
+  ],
+  "author": "Jardson Martins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jardsonmartins/DevBoost/issues"
+  },
+  "homepage": "https://github.com/jardsonmartins/DevBoost#readme"
+}

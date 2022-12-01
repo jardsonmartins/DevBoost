@@ -1,0 +1,14 @@
+.certificado{
+    height: 530px;
+
+    .img-certificado{
+        margin-top: 90px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .certificado{
+        text-align: center;
+        height: auto;
+        padding-bottom: 60px;
+    }
+}

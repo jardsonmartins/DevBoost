@@ -1,0 +1,60 @@
+.footer{
+    height: 370px;
+    padding-top: 120px;
+
+    .line{
+        width: 40px;
+        height: 3px;
+        background: linear-gradient(95.54deg, #F3451C -6.71%, #FF933A 142.56%);
+        border-radius: 7px;
+    }
+    h6{
+        color: #F65D25;
+    }
+    ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
+    a:hover{
+        color: #F65D25;
+        text-decoration: none;
+    }
+    .setaTopo{
+        p, img{
+            display: inline-block;
+        }
+        float: right;
+    }
+}
+@media only screen and (max-width:992px){
+    .footer{
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .footer{
+        text-align: center;
+        margin-top: 0px;
+        padding-top: 20px;
+
+        .logo{
+            margin-top: 40px;
+        }
+        .lineOne{
+            display: flex;
+            justify-content: center;
+        }
+        .setaTopo{
+            float: none;
+            margin-bottom: 10px;
+        }
+        .direitos{
+            margin: 20px 0 0 0;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.grade{
+    background: url('../img/Background-grade.svg');
+    height: 880px;
+    background-size: cover;
+
+    h5{
+        margin: 0 0 0 13px;
+    }
+    h5, li{
+        color: #fff;
+    }
+    ul{
+        margin-top: 25px;
+        list-style-image: url('../img/Icons/icon-ok.svg');
+        padding-left: 18px;
+    }
+    li{
+        font-size: 15px;
+        &:not(:first-child){
+            margin-top: 13px;
+        }
+        &:hover{
+            margin-left: 5px;
+            transition: 0.4s;
+            cursor: pointer;
+        }
+    }
+    .swiper{
+        padding-bottom: 50px;
+    }
+    .swiper-pagination-bullet{
+        background: #F65D25;
+    }
+
+    @media only screen and (max-width: 578px){
+        height: auto;
+        padding: 60px 0;
+
+        ul{
+            list-style: none;
+        }
+        .swiper-slide{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.backgroundCertificado{
+    height: 1090px;
+    background-image: url('../img/Background-certificado.svg');
+}
+
+@media only screen and (max-width: 768px){
+    .backgroundCertificado{
+        background: none;
+        height: auto;
+    }
+}
+.aprendaDoZero{
+    height: 570px;
+
+    .projetos{
+        width: 487px;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0px 8px 36px rgba(246, 93, 37, 0.26);
+    }
+}
+
+@media only screen and (max-width: 992px) {
+   .aprendaDoZero{
+        height: auto;
+        padding: 40px 0;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+    .aprendaDoZero{
+        height: auto;
+        text-align: center;
+        padding: 0 0 40px;
+
+        .btn{
+            margin-bottom: 60px;
+        }
+   }
+}

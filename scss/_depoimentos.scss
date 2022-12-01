@@ -1,0 +1,49 @@
+.depoimentos{
+    height: auto;
+    padding-bottom: 70px;
+    
+    .title{
+        margin-top: 70px;
+    }
+    .card{
+        background: #202227;
+        height: auto;
+        padding: 25px 40px;
+
+        .icon{
+            width: 30px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        p{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 25px;
+            color: #FFFFFF;
+            opacity: 0.8;
+            margin: 0;
+            padding: 0;
+        }
+        .nome{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            color: #F65D25;
+            margin-top: 10px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    .depoimentos{
+        padding-bottom: 0px;
+        .card{
+            margin: 0 30px 30px 30px;
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.pageObrigado{
+    background-image: url("../img/backgroundObrigado.jpg");
+    height: 100vh;
+    width: 100%;
+
+    h1{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 46px;
+        color: #F65D25;
+    }
+    h5{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        color: #FFFFFF;
+    }
+    p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #ffffff;
+    }
+    .html{
+        position: absolute;
+        left: 40%;
+        top: 110px;
+    }
+    .css{
+        position: absolute;
+        left: 45%;
+        top: 600px;
+    }
+    .js{
+        position: absolute;
+        left: 85%;
+        top: 140px;
+    }
+    .html{
+        animation: anim-img 8s ease-in-out infinite;
+    }
+    .css{
+        animation: anim-img 6s ease-in-out infinite;
+    }
+    .js{
+        animation: anim-img 4s ease-in-out infinite;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .pageObrigado{
+        text-align: center;
+        height: auto;
+        background-image: none;
+        background-color: #101116;
+
+        .img-homem{
+            width: 450px;
+            height: auto;
+        }
+        .text{
+            padding-bottom: 50px;
+        }
+        .imagem{
+            order: -1;
+            margin: 40px 0 50px 0;
+        }
+        .html, .css, .js{
+            display: none;
+        }
+    }
+}

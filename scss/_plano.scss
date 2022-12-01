@@ -1,0 +1,84 @@
+.plano{
+    height: 500px;
+
+    .descricao{
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+    .img-plano{
+        width: 530px;
+        height: auto;
+        margin-left: -50px;
+    }
+    .preco{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;   
+        opacity: 0.8;
+        margin-bottom: 0px;
+    }
+    span{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .html{
+        position: relative;
+        left: 2%;
+        top: -300px;
+    }
+    .css{
+        position: relative;
+        left: 10%;
+        top: -400px;
+    }
+    .js{
+        position: relative;
+        left: 30%;
+        top: 100px;
+    }
+
+    .html{
+        animation: anim-img 8s ease-in-out infinite;
+    }
+    .css{
+        animation: anim-img 6s ease-in-out infinite;
+    }
+    .js{
+        animation: anim-img 4s ease-in-out infinite;
+    }
+
+    @keyframes anim-img {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(20px);
+          }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+
+    @media only screen and (max-width: 1400px){
+        .html{
+            position: relative;
+            left: 2%;
+            top: -100px;
+        }
+    }
+    @media only screen and (max-width: 1270px){
+        .html, .css, .js{
+            display: none;
+        }
+    }
+    @media only screen and (max-width: 768px){
+        height: auto;
+        text-align: center;
+        margin: 30px 0 30px 0;
+
+        .title{
+            margin-top: 30px;
+        }
+    }
+}
